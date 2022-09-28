@@ -101,6 +101,8 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
+
+    // Ove dve sledece metode su da ne mora svaki put da se loguje vec da zapamti korisnika
 /*
     @Override
     protected void onStart() {
