@@ -163,7 +163,7 @@ public class TodaySpendingActivity extends AppCompatActivity {
                 String notes = note.getText().toString();
 
                 if (TextUtils.isEmpty(Amount)){
-                    amount.setError("Amount is requred!");
+                    amount.setError("Amount is required!");
                     return;
                 }
 
@@ -195,7 +195,7 @@ public class TodaySpendingActivity extends AppCompatActivity {
                     String itemNweek = Item+weeks.getWeeks();
                     String itemNmonth = Item+months.getMonths();
 
-                    Data data = new Data(Item, date, id, itemNDay, itemNweek, itemNmonth, Integer.parseInt(Amount), weeks.getWeeks(), months.getMonths(), notes);
+                    Data data = new Data(Item, date, id, itemNDay, itemNweek, itemNmonth, Integer.parseInt(Amount), months.getMonths(), weeks.getWeeks(), notes);
                     expensesRef.child(id).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

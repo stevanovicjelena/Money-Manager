@@ -146,7 +146,7 @@ public class MontlyAnalyticsActivity extends AppCompatActivity {
 
         getTotalWeekSpending();
 
-        new java.util.Timer().schedule(
+ /*       new java.util.Timer().schedule(
                 new TimerTask() {
                     @Override
                     public void run() {
@@ -157,7 +157,7 @@ public class MontlyAnalyticsActivity extends AppCompatActivity {
                 2000
         );
 
-
+*/
     }
 
     private void getTotalWeekTransportExpense() {

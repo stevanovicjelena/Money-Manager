@@ -23,7 +23,9 @@
         android:paddingHorizontal="10dp"
         android:layout_below="@+id/toolbar">
 
-        <TableRow>
+        <TableRow
+            android:background="#E91E63"
+            android:layout_marginTop="4dp">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
